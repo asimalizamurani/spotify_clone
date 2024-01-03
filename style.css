@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    width: 25vw;
+    /* border: 2px solid red; */
+    margin: 3px;
+}
+
+.leftTop {
+    border-radius: 12px;
+    background-color: rgb(61, 61, 61);
+    height: 18vh;
+}
+
+.leftTop .icon {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.807);
+    padding: 13px 25px;
+    cursor: pointer;
+}
+
+.icon span {
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.left-bottom {
+    width: 100%;
+    height: 82vh;
+    background-color: rgb(39, 37, 37);
+    margin-top: 4px;
+    border-radius: 12px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    color: rgb(215, 215, 215);
+}
+
+.left-side {
+    font-size: 20px;
+}
+
+.left-side  span {
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.top-row i {
+    font-size: 20px;
+    color: rgb(199, 186, 186);
+}
+
+.left-side:hover {
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.left-side i:hover {
+    color: #fff;
+}
+
+.top-row i:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.right-section {
+    width: 75vw;
+    border: 2px solid red;
+}

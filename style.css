@@ -8,10 +8,16 @@
 html, body {
     width: 100%;
     height: 100%;
+    background-color: rgb(21, 21, 21);
+}
+
+:root {
+    --lightgray: rgb(39, 37, 37);
 }
 
 .container {
     display: flex;
+    margin-top: 4px;
 }
 
 .left-section {
@@ -22,8 +28,8 @@ html, body {
 
 .leftTop {
     border-radius: 12px;
-    background-color: rgb(61, 61, 61);
-    height: 18vh;
+    background-color: var(--lightgray);
+    height: 25vh;
 }
 
 .leftTop .icon {
@@ -41,8 +47,8 @@ html, body {
 
 .left-bottom {
     width: 100%;
-    height: 82vh;
-    background-color: rgb(39, 37, 37);
+    height: 75vh;
+    background-color: var(--lightgray);
     margin-top: 4px;
     border-radius: 12px;
 }
@@ -67,6 +73,7 @@ html, body {
 .top-row i {
     font-size: 20px;
     color: rgb(199, 186, 186);
+    padding: 8px;
 }
 
 .left-side:hover {
@@ -82,8 +89,74 @@ html, body {
 .top-row i:hover {
     color: #fff;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s ease-in;
+    border-radius: 50%;
+    background-color: rgba(82, 79, 79, 0.947);
 }
+
+.box-container {
+    width: 100%;
+    height: 25vh;
+    padding: 5px 8px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.box-container::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    width: 100%;
+    background-color: rgba(64, 62, 62, 0.517);
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 12px 8px;
+    line-height: 2.5em;
+}
+
+.box h2 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.box p {
+    color: #fff;
+    font-size: 12;
+    font-weight: 500;
+}
+
+.box .btn {
+    background-color: #fff;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    margin: 10px 0;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.box .btn:hover {
+    background-color: #ffffffeb;
+    font-size: 17px;
+}
+
+.key-words {
+    width: 100%;
+    border: 2px solid red;
+    padding: 12px 20px;
+}
+
+.key-words span {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+
 
 
 

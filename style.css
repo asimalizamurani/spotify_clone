@@ -241,3 +241,23 @@ nav {
    font-weight: 700;
    background-color: rgba(255, 255, 255, 0.898);
 }
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    CARD SECTION   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.card-section {
+    width: 100%;
+    background: grey;
+}
+
+.card {
+    width: 15vw;
+    background-color: #2a2a2a;
+}
+
+.card img {
+    /* width: 165px; */
+    width: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-clip: border-box;
+}

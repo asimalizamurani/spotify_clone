@@ -16,6 +16,7 @@ html, body {
     --second-gray: rgba(64, 62, 62, 0.517);
     --nav: rgb(27, 27, 27);
     --text-color: rgba(172, 171, 171, 0.938);
+    --cheading: #ffffff;
 }
 
 .container {
@@ -260,4 +261,15 @@ nav {
     border-radius: 8px;
     background-size: cover;
     background-clip: border-box;
+}
+
+.card h2 {
+    color: var(--cheading);
+    font-size: 1rem;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
 }

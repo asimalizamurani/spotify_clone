@@ -18,6 +18,7 @@ html, body {
     --text-color: rgba(172, 171, 171, 0.938);
     --cheading: #ffffff;
     --cardsectionbg: #121212e5;
+    --play-icon-bgcolor: #1ed760;
 }
 
 .container {
@@ -289,6 +290,7 @@ nav {
     background-color: #2a2a2a;
     padding: 14px;
     border-radius: 8px;
+    position: relative;
 }
 
 .card img {
@@ -314,15 +316,14 @@ nav {
 }
 
 .card .play-icon {
-    background-color: green;
-    border-radius: 50%;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    text-align: center;
+    position: absolute;
+    right: 22px;
+    bottom: 95px;
+    background: var(--play-icon-bgcolor);
+    border-radius: 50px;
 }
 
 .card .play-icon i {
-    padding: 10px;
+    padding: 12px 14px;
+    font-size: 23px;
 }

@@ -321,6 +321,12 @@ nav {
     bottom: 95px;
     background: var(--play-icon-bgcolor);
     border-radius: 50px;
+    opacity: 1;
+    transition: 3s;
+}
+
+.play-icon {
+    opacity: 1;
 }
 
 .card .play-icon i {

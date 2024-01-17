@@ -24,11 +24,13 @@ html, body {
 .container {
     display: flex;
     margin-top: 4px;
+    position: relative;
 }
 
 .left-section {
-    width: 25vw;
+    width: 24vw;
     margin: 3px;
+    position: fixed;
 }
 
 .leftTop {
@@ -190,11 +192,14 @@ html, body {
 /* ....................  This is the right section   ......................... */
 
 .right-section {
-    width: 75vw;
+    width: 74vw;
     margin-left: 6px;
     margin-top: 4px;
     border-radius: 12px;
     background-color: var(--lightgray);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 nav {
@@ -206,6 +211,8 @@ nav {
     padding: 10px 30px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    position: sticky;
+    top: 0;
 } 
 
 .nav-left-btn {

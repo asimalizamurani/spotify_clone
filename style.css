@@ -359,3 +359,14 @@ footer {
 footer .contents ul li {
     list-style: none;
 }
+
+.contents h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contents {
+    padding: 56px 5px;
+    background: transparent;
+}

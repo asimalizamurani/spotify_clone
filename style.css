@@ -19,6 +19,7 @@ html, body {
     --cheading: #ffffff;
     --cardsectionbg: #121212e5;
     --play-icon-bgcolor: #1ed760;
+    --mainbg: #121212;
 }
 
 .container {
@@ -202,7 +203,7 @@ html, body {
     margin-left: 6px;
     margin-top: 4px;
     border-radius: 12px;
-    background-color: var(--lightgray);
+    background-color: var(--mainbg);
     position: absolute;
     top: 0;
     right: 0;
@@ -354,6 +355,7 @@ nav {
 footer {
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 footer .contents ul li {
@@ -369,4 +371,18 @@ footer .contents ul li {
 .contents {
     padding: 56px 5px;
     background: transparent;
+}
+
+.social-media-icons {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+
+.social-media-icons i {
+    font-size: 20px;
+    border-radius: 50px;
+    background: #292929;
+    padding: 10px 12px;
+    color: white;
 }

@@ -5,28 +5,38 @@ let cursor = document.querySelector('.cursor');
 let leftSection = document.querySelector('.left-section');
 let moveImg = document.querySelector('.moveImg');
 let songs = document.querySelectorAll('.song');
+let phoneMenuBar = document.querySelector('.phone-menu');
+let menu = document.querySelector('#menu');
+let closeMenu = document.querySelector('.close-btn');
 
 cards.forEach((card) => {
+
+    // console.log(card.childNodes[3]);
     card.addEventListener("mouseenter", function() {
-       playIcon.forEach((icon) => {
-        icon.addEventListener("mouseenter", () => {
-            icon.style.opacity = 1;
-        })
+    //    playIcon.forEach((icon) => {
+    //     icon.addEventListener("mouseenter", () => {
+    //         icon.style.opacity = 1;
+    //         icon.style.bottom =" 100px";
+    //     })
         
-       })  
+    //    })  
+    card.childNodes[3].style.opacity = 1;
+    card.childNodes[3].style.bottom = "110px";
+
     })
 })
 
-cards.forEach((card) => {
-    card.addEventListener("click", function() {
-        console.log("Hello");
-    })
-})
+// cards.forEach((card) => {
+//     card.addEventListener("click", function() {
+//         console.log("Hello");
+//     })
+// })
 
 cards.forEach((card) => {
     card.addEventListener("mouseleave", function() {
        playIcon.forEach((icon) => {
-        icon.style.opacity = 0;
+        card.childNodes[3].style.opacity = 0;
+    card.childNodes[3].style.bottom = "90px";
        });  
     });
 });
@@ -71,5 +81,14 @@ songs.forEach(function(val) {
     val.addEventListener("mouseleave", function() {
         val.childNodes[3].style.opacity = 0;
         val.childNodes[3].style.scale = 0;
-    })
+    });
+});
+
+menu.addEventListener("click", function() {
+    phoneMenuBar.style.display = "block";
+    // console.log("clicked")
+})
+
+closeMenu.addEventListener("click", function() {
+    phoneMenuBar.style.display = "none";
 })

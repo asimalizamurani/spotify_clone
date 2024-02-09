@@ -1,0 +1,41 @@
+/* FOR IPHONE XR SCREEN */
+
+@media (max-width: 455px) {
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    width: 100vw;
+  }
+
+  .nav-left-btn {
+    display: none;
+  }
+
+  .nav-right-btn button {
+    display: none;
+  }
+
+  .nav-right-btn #menu i {
+    opacity: 1;
+  }
+
+  .card-top-texts h1 {
+    padding: 11px 15px;
+    font-size: 20px;
+  }
+
+  .card-top-texts h5 {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards .card {
+    width: 100%;
+    margin: 20px 0px;
+  }
+}

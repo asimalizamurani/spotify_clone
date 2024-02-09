@@ -1,3 +1,7 @@
+/* Details about this page 
+--->>  Songs page styling starts from 430 till ...*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: rgb(15, 15, 15);
+    color: white;
 }
 
 :root {
@@ -26,6 +31,25 @@ html, body {
     display: flex;
     margin-top: 4px;
     position: relative;
+}
+
+.cursor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orangered;
+    z-index: 9;
+    opacity: 0;
+    scale: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor span {
+    font-weight: 500;
 }
 
 .left-section {
@@ -402,4 +426,80 @@ footer .contents ul li {
 .bottom-text p {
     color: rgba(128, 128, 128, 0.633);
     font-weight: 400;
+}
+
+
+
+
+/*   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<      SONGS PAGE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#mainContainer {
+    width: 100%;
+    height: 100%;
+}
+#mainContainer h2 {
+    padding: 17px;
+}
+
+.songSection {
+    width: 100%;
+    height: 100%;
+}
+
+#mainContainer .currentSong {
+    width: 80%;
+    height: 50%;
+    /* background-color: lightseagreen; */
+    margin: 0 auto;
+
+}
+
+.currentSong img {
+    width: 100%;
+    height: 100%;
+    object-fit: cove;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.songPlaylist {
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid #dadada3f;
+    border-bottom: 1px solid #dadada3f;
+    margin: 35px auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.songPlaylist::-webkit-scrollbar {
+    display: none;
+}
+
+.song {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+ .song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.songContents {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.song .moveImg {
+    opacity: 0;
+    scale: 0;
+    position: absolute;
 }

@@ -86,6 +86,7 @@ songs.forEach(function(val) {
 
 menu.addEventListener("click", function() {
     phoneMenuBar.style.display = "block";
+    phoneMenuBar.style.zIndex = 99;
     // console.log("clicked")
 })
 

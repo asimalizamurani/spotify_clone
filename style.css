@@ -25,6 +25,7 @@ html, body {
     --cardsectionbg: #121212e5;
     --play-icon-bgcolor: #1ed760;
     --mainbg: #121212;
+    --songSectionColor: #a7a7a7;
 }
 
 .grey {
@@ -286,6 +287,7 @@ nav {
     border-top-right-radius: 12px;
     position: sticky;
     top: 0;
+    z-index: 9;
 } 
 
 .nav-left-btn {
@@ -541,13 +543,6 @@ footer .contents ul li {
     mix-blend-mode: difference;
 }
 
-.song .moveImg {
-    opacity: 0;
-    scale: 0;
-    position: absolute;
-    transition: 0.2s;
-}
-
 .songBottom {
     display: flex;
     justify-content: space-between;
@@ -591,15 +586,79 @@ footer .contents ul li {
     font-weight: 400;
 }
 
+.songBottom .songLeft {
+    height: 14vh;
+    width: 20%;
+    margin-left: 20px;
+}
+
 .songBottom .songLeft .fa-play:hover {
-    padding: 20px 22px;
+    padding: 19.5px 20.5px;
 }
 
-.songBottom .songLeft .fa-heart:hover {
-    color: #fff;
-}
-
+.songBottom .songLeft .fa-heart:hover,
 .songBottom .songLeft .fa-ellipsis:hover {
     color: #fff;
 }
 
+.songRight span:hover {
+    color: #fff;
+}
+
+.songsRows .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: var(--mainbg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 50px;
+    border-bottom: 1px solid #7b7777b0;
+}
+
+.songsRows .navbar div span,
+.songsRows .navbar div i {
+    color: var(--songSectionColor);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.song-container {
+    height: 86vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.song-container::-webkit-scrollbar {
+    display: none;
+}
+
+.songRow .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.row .title {
+    width: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .title img {
+    width: 40px;
+    border-radius: 4px;
+}
+
+.title .texts h4 {
+    font-weight: 500;
+}
+
+.title .texts span {
+    font-weight: 400;
+    color: var(--songSectionColor);
+    font-size: 16px;
+}
